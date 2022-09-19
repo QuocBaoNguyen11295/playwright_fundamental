@@ -1,0 +1,28 @@
+{
+  "name": "playwright_fundamental",
+  "version": "1.0.0",
+  "description": "Fundamental of Playwright",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuocBaoNguyen11295/playwright_fundamental.git"
+  },
+  "keywords": [
+    "automation",
+    "playwright",
+    "js"
+  ],
+  "author": "Quoc Bao Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QuocBaoNguyen11295/playwright_fundamental/issues"
+  },
+  "homepage": "https://github.com/QuocBaoNguyen11295/playwright_fundamental#readme",
+  "dependencies": {
+    "@playwright/test": "^1.25.2",
+    "prettier": "^2.7.1"
+  }
+}
