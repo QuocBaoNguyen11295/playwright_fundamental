@@ -22,3 +22,10 @@ test('Working with input',async ({ page })=>{
     await page.click('input[type="submit"]')
     await expect(page.locator('.alert-error')).toContainText('Login and/or password are wrong.')
 })
+
+test('Assert to verify the element is visible',async ({ page })=>{
+    await page.goto('https://www.example.com')
+    const header = page.locator('h1')
+    await expect(header).toBeVisible()
+    
+})
