@@ -4,7 +4,12 @@
   "description": "Fundamental of Playwright",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pw:test": "playwright test",
+    "pw:test-chrome": "playwright test --config=playwright.config.ts --project=Chromium",
+    "pw:test-firefox": "playwright test --config=playwright.config.ts --project=Firefox",
+    "pw:test-webkit": "playwright test --config=playwright.config.ts --project=Webkit",
+    "pw:test-report": "playwright test --config=playwright.config.ts --reporter=html",
+    "pw:show-report": "playwright show-report"
   },
   "repository": {
     "type": "git",
