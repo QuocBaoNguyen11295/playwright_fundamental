@@ -1,6 +1,6 @@
 import {test,expect} from '@playwright/test'
 import { loadPage,closePage } from '../helper/helper'
-test.describe('My first test suite @test',()=>{
+test.describe.parallel('My first test suite @test',()=>{
     test.beforeEach(async ({ page })=>{
         await loadPage(page)
     })
