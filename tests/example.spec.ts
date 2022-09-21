@@ -1,7 +1,8 @@
 import {test,expect} from '@playwright/test'
+import { loadPage,closePage } from '../helper/helper'
 test.describe('My first test suite @test',()=>{
     test.beforeEach(async ({ page })=>{
-        await page.goto('http://zero.webappsecurity.com/index.html')
+        await loadPage(page)
     })
     test.skip('simple basic test @sample',async ({ page })=>{
         await page.goto('https://www.example.com')
@@ -39,6 +40,6 @@ test.describe('My first test suite @test',()=>{
         await element?.screenshot({path: 'screenshots/screenshot_single_element.png'})
     })
     test.afterEach(async({ page })=>{
-        await page.close()
+        await closePage(page)
     })
 })
